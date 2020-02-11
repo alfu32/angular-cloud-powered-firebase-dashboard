@@ -36,7 +36,8 @@
               "node_modules/semantic-ui-grid/grid.min.css",
               "node_modules/semantic-ui-form/form.min.css",
               "node_modules/semantic-ui-button/button.min.css",
-              "node_modules/semantic-ui-container/container.min.css"
+              "node_modules/semantic-ui-container/container.min.css",
+              "node_modules/semantic-ui-message/message.min.css"
             ],
             "scripts": [
               "src/assets/particles.js"
@@ -47,7 +48,7 @@
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "with": "src/environments/environment.production.ts"
                 }
               ],
               "optimization": true,
@@ -77,7 +78,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "grid-dashboard:build"
+            "browserTarget": "grid-dashboard:build",
+            "port": 8080
           },
           "configurations": {
             "production": {

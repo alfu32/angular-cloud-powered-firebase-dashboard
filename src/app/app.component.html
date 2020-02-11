@@ -1,5 +1,7 @@
 <header id="particles">
   <h2>The Grid</h2>
+  <button class="ui seecondary button logout" (click)="logout()"
+   *ngIf="auth.isLoggedIn()">Logout</button>
 </header>
 
 <div class="app">
